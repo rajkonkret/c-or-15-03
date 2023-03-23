@@ -1,17 +1,17 @@
 from flask import Flask, render_template
 
-# pip install flask
 app = Flask(__name__)
 
 
 @app.route("/")
 def home():
-    return "Hello"
+    # return "Hello, World!"
+    return render_template('home.html')
 
 
 @app.route("/salvador")
 def salvador():
-    return "Hello. Salvador"
+    return "Hello, Salvador"
 
 
 if __name__ == "__main__":
