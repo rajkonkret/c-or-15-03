@@ -11,5 +11,4 @@ for i in range(0, worksheet.max_row):
         lista.append(col[i].value)
 
 print(lista)
-print(lista[0:3])
-print(lista[4:7])
+print(lista[0])
